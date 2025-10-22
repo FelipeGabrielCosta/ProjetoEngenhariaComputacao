@@ -1,0 +1,81 @@
+/* --- Estilos para o Single Page Application (SPA) --- */
+/* Base styles imported from the HTML/Tailwind config */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Primary Navigation (Desktop) */
+.nav-button-primary {
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent; /* Define uma base transparente */
+}
+
+.nav-button-primary.active-nav {
+    border-bottom-color: #005f73; /* Cor de destaque para a página ativa */
+    font-weight: 600;
+    color: #005f73;
+}
+
+/* Secondary Navigation (Dashboard/Case Studies) */
+.nav-button-secondary {
+    transition: all 0.3s ease;
+    border-bottom: 4px solid transparent;
+}
+.nav-button-secondary.active {
+    border-bottom-color: #0a9396;
+    color: #005f73;
+    font-weight: 600;
+}
+
+/* Accordion (Componente interno dos estudos de caso) */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+.accordion-header.open .icon {
+    transform: rotate(180deg);
+}
+
+/* Chart container */
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    max-height: 350px;
+}
+@media (min-width: 768px) {
+    .chart-container {
+        height: 350px;
+    }
+}
+
+/* Mobile menu specific styles (Hamburger) */
+#mobile-menu {
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+}
+#mobile-menu.open {
+    /* Ajuste um valor alto o suficiente para caber o menu */
+    max-height: 500px; 
+}
+
+/* Estilo para os Cards na Home (Destaques) */
+.highlight-card {
+    transition: all 0.3s ease;
+    border-left: 4px solid #005f73;
+}
+.highlight-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+}
+
+.highlight-card[data-page-id="brazil-analysis"] {
+    border-left-color: #0a9396;
+}

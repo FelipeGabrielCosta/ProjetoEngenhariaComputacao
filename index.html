@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos de Engenharia de Computação I</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script defer src="js/app.js"></script>
+    
+    <style>
+        /* Placeholder para a logo (substituir por SVG/PNG) */
+        .logo-placeholder {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #005f73;
+        }
+    </style>
+</head>
+<body class="text-gray-800 bg-gray-50">
+
+    <header class="bg-white shadow-lg sticky top-0 z-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <span class="logo-placeholder">⚙️</span>
+                    <h1 class="text-lg sm:text-xl font-bold text-[#005f73] hidden sm:block">
+                        Projeto Engenharia de Computação I
+                    </h1>
+                </div>
+
+                <nav class="hidden md:flex space-x-1">
+                    <button data-page-id="home" class="nav-button-primary py-2 px-3 text-sm hover:bg-gray-100 transition-colors duration-200 active-nav">
+                        Início
+                    </button>
+                    <button data-page-id="global-analysis" class="nav-button-primary py-2 px-3 text-sm hover:bg-gray-100 transition-colors duration-200">
+                        Análise Global
+                    </button>
+                    <button data-page-id="brazil-analysis" class="nav-button-primary py-2 px-3 text-sm hover:bg-gray-100 transition-colors duration-200">
+                        Projetos Brasileiros
+                    </button>
+                </nav>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-500 hover:text-gray-700 transition-colors duration-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+            
+            <nav id="mobile-menu" class="md:hidden bg-white border-t border-gray-200">
+                <div class="flex flex-col py-2">
+                    <a href="#" data-page-id="home" class="page-link py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors active-nav">Início</a>
+                    <a href="#" data-page-id="global-analysis" class="page-link py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors">Análise Global</a>
+                    <a href="#" data-page-id="brazil-analysis" class="page-link py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors">Projetos Brasileiros</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="dynamic-page-content" class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 min-h-screen">
+        </main>
+
+    <footer class="bg-[#005f73] text-white mt-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center">
+            <p class="text-sm">&copy; 2025 Projetos de Engenharia de Computação I. Análise de Falhas e Soluções.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
