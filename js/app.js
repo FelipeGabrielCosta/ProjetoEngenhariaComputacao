@@ -118,7 +118,7 @@ const globalProjectsData = {
         sections: [
             { title: "Identificação das Principais Falhas", content: `<ul class="list-disc list-inside space-y-2"><li><strong>Técnica (Viabilidade Prematura):</strong> Subestimação da complexidade de integrar Blockchain em infraestrutura crítica.</li><li><strong>Gerencial (Dependência):</strong> Falha na gestão de risco e <strong>dependência excessiva de um único fornecedor</strong>.</li></ul>` },
             { title: "Proposta de Reformulação: Validação Faseada de Tecnologia e Governança Transparente", content: `<ul class="list-disc list-inside space-y-2"><li><strong>Testes PoC Abrangentes:</strong> Investir em testes faseados, focados na validação da escalabilidade em volumes reais.</li><li><strong>Diversificação de Fornecedores:</strong> Implementar arquitetura de sistemas com <strong>múltiplos fornecedores</strong>.</li></ul>` },
-            { title: "Fundamentação Científica: Comprovação", content: `<p>O sucesso requer uma abordagem holística que priorize a <strong>governança transparente</strong> e a garantia de <strong>interoperabilidade e escalabilidade</strong>. A tecnologia DLT deve ser minuciosamente validada antes da implantação em sistemas de missão crítica.</p>` },
+            { title: "Fundamentação Científica: Comprovação", content: `<p>O sucesso requer uma abordagem holística que prioritize a <strong>governança transparente</strong> e a garantia de <strong>interoperabilidade e escalabilidade</strong>. A tecnologia DLT deve ser minuciosamente validada antes da implantação em sistemas de missão crítica.</p>` },
             {
                 title: "Referências e Fontes de Notícias",
                 content: `
@@ -155,7 +155,90 @@ const globalProjectsData = {
             }
         ],
         visualization: { type: 'chart', id: 'watsonChart', config: { type: 'doughnut', data: { labels: ['Taxa de Falha em Projetos de IA na Saúde', 'Taxa de Sucesso (Estimativa)'], datasets: [{ data: [80, 20], backgroundColor: [DOMAIN_COLORS[4], DOMAIN_COLORS[1]], }] }, options: { maintainAspectRatio: false, responsive: true, plugins: { title: { display: true, text: 'Taxa de Insucesso em Projetos de IA (>80%)' }, legend: { position: 'bottom' } }, animation: { animateScale: true } } } }
+    },
+    // INÍCIO: NOVO CASO DE ESTUDO DO WII U
+    "wii-u-failure": {
+        title: "Caso Especial: Nintendo Wii U (2012)",
+        intro: "Um fracasso comercial retumbante, que serviu como berço de ideias de sucesso para o Nintendo Switch. A falha foi sistêmica: má comunicação, engenharia de custo, e alta complexidade percebida.",
+        isCaseStudy: true,
+        sections: [
+            { 
+                title: "Análise da Falha: Marketing e Complexidade", 
+                content: `
+                    <ul class="list-disc list-inside space-y-2">
+                        [cite_start]<li><strong>Falha de Comunicação:</strong> A nomenclatura "Wii U" e o design semelhante ao Wii causaram confusão, violando o princípio da clareza da proposta de valor[cite: 31, 32, 33].</li>
+                        [cite_start]<li><strong>Complexidade de Engenharia:</strong> O GamePad exigia um subsistema de comunicação Wi-Fi de alta tecnologia (streaming de vídeo HD)[cite: 46, 47]. [cite_start]Cortes de custo neste subsistema levaram a problemas crônicos de latência e perda de sincronização[cite: 49, 50].</li>
+                        [cite_start]<li><strong>UX e Desempenho:</strong> A lentidão do sistema operacional e da interface do usuário (UI) foi um "obstáculo" que degradou a experiência[cite: 57, 59, 62].</li>
+                        [cite_start]<li><strong>Êxodo Third-Party:</strong> A arquitetura customizada, diferente do PS4/Xbox One, aumentou a complexidade e o custo de desenvolvimento, acelerando a defasagem[cite: 64, 66, 68].</li>
+                    </ul>
+                `
+            },
+            { 
+                title: "Diagnóstico: Teoria da Difusão da Inovação (Rogers)", 
+                content: `
+                    <p>O fracasso é mapeado diretamente para os atributos da Teoria de Rogers:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><strong>Complexidade:</strong> Alta. [cite_start]Problemas técnicos (lentidão, falhas de sincronização) adicionaram atrito e instabilidade percebida[cite: 115, 116].</li>
+                        <li><strong>Compatibilidade:</strong> Baixa. [cite_start]A semelhança com o Wii confundiu a identidade do console como uma nova plataforma essencial[cite: 118, 119].</li>
+                        <li><strong>Vantagem Relativa:</strong> Obscurecida. [cite_start]O benefício do dual-screen não superava a defasagem de hardware para core gamers e a falta de catálogo third-party[cite: 122, 123].</li>
+                    </ul>
+                `
+            },
+            { 
+                title: "Blueprint da Reformulação: O Sucesso do Switch", 
+                content: `
+                    [cite_start]<p>O Nintendo Switch (2017) corrigiu as falhas sistêmicas do Wii U com boas práticas de engenharia[cite: 71, 145]:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        [cite_start]<li><strong>Engenharia Modular:</strong> Substituição do GamePad por uma arquitetura híbrida verdadeira (display portátil + dock), com Joy-Cons destacáveis, permitindo flexibilidade sem complexidade de streaming[cite: 75, 76, 77].</li>
+                        [cite_start]<li><strong>Otimização de UX/Desempenho:</strong> Menu otimizado para o acesso rápido ("três cliques de botão") ao jogo, erradicando a lentidão[cite: 90, 91, 93].</li>
+                        [cite_start]<li><strong>Clareza de Valor:</strong> Nome "Nintendo Switch" comunica o ato central de mudar de modo instantaneamente, definindo uma Vantagem Relativa única (portabilidade)[cite: 82, 83, 140, 141].</li>
+                        [cite_start]<li><strong>Arquitetura Acessível:</strong> Adoção de arquitetura Tegra (padrão) para minimizar o custo e a complexidade de *porting* para third-parties[cite: 96, 97].</li>
+                    </ul>
+                `
+            },
+            {
+                title: "Referências e Fontes de Notícias",
+                content: `
+                    <ul class="list-disc list-inside space-y-2 text-sm text-gray-600">
+                        [cite_start]<li>**Análise:** Análise e Reformulação do Fracasso do Projeto Wii U[cite: 1, 2].</li>
+                        [cite_start]<li>**Estudo de Caso:** Nintendo Wii U: A Anatomia do Fracasso Comercial[cite: 149].</li>
+                        [cite_start]<li>**Lições Aprendidas:** What Nintendo Learned From the Wii U and Applied to the Switch[cite: 162].</li>
+                        [cite_start]<li>**Teoria de Rogers:** Difusão de inovações: apreciação crítica dos estudos de Rogers[cite: 170].</li>
+                    </ul>
+                `
+            }
+        ],
+        visualization: { 
+            type: 'chart', 
+            id: 'wiiUComparisonChart', 
+            config: { 
+                type: 'bar', 
+                data: { 
+                    labels: ['Wii U', 'Nintendo Switch'], 
+                    datasets: [{ 
+                        label: 'Vendas Totais Estimadas (Milhões de Unidades)', 
+                        data: [13.56, 141.32],
+                        backgroundColor: [DOMAIN_COLORS[0], DOMAIN_COLORS[2]], 
+                    }] 
+                }, 
+                options: { 
+                    maintainAspectRatio: false, 
+                    responsive: true, 
+                    plugins: { 
+                        title: { display: true, text: 'Vendas: Wii U vs. Nintendo Switch (Projeção de Sucesso)' }, 
+                        legend: { display: false } 
+                    }, 
+                    scales: { 
+                        y: { 
+                            beginAtZero: true, 
+                            title: { display: true, text: 'Milhões de Unidades' } 
+                        } 
+                    } 
+                } 
+            } 
+        }
     }
+    // FIM: NOVO CASO DE ESTUDO DO WII U
 };
 
 const brazilProjectsData = {
@@ -577,6 +660,8 @@ function navigate(pageId) {
         renderAnalysisPage('global');
     } else if (pageId === 'brazil-analysis') {
         renderAnalysisPage('brazil');
+    } else if (pageId === 'wii-u-failure') {
+        renderCaseStudyPage('wii-u-failure', 'global');
     }
     setActivePrimaryButton(pageId);
     // Fecha o menu mobile após a navegação
@@ -625,6 +710,46 @@ function init() {
         }
     });
     
+}
+
+// Adicione uma nova função auxiliar para renderizar o estudo de caso individual fora do menu principal (se desejado como página única), ou use a função displayProject diretamente:
+function renderCaseStudyPage(projectId, analysisType) {
+    const dynamicContent = document.getElementById('dynamic-page-content');
+    dynamicContent.innerHTML = `
+        <section id="page-${projectId}" class="p-6 rounded-lg shadow-lg">
+            <nav class="mb-4">
+                <button onclick="navigate('global-analysis')" class="text-[#0a9396] hover:underline font-semibold flex items-center">
+                    &larr; Voltar para Dashboard Global
+                </button>
+            </nav>
+            <div id="case-study-content"></div>
+        </section>
+    `;
+    // Simula a função displayProject para renderizar o conteúdo do caso
+    const projects = analysisType === 'global' ? globalProjectsData : brazilProjectsData;
+    const project = projects[projectId];
+
+    if (!project) return;
+    
+
+    if (pageId === 'wii-u-failure') {
+        // Redirecionar para a página de análise global e carregar o projeto
+        renderAnalysisPage('global');
+        // Usar setTimeout para garantir que o DOM esteja pronto e os listeners do overview carregados
+        setTimeout(() => {
+            displayProject('wii-u-failure', 'global');
+            // Definir o botão secundário ativo (caso exista)
+            const analysisNav = document.getElementById('analysis-nav-container');
+            analysisNav.querySelectorAll('.nav-button-secondary').forEach(btn => {
+                if (btn.dataset.projectId === 'wii-u-failure') {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }, 100);
+        return;
+    }
 }
 
 document.addEventListener('DOMContentLoaded', init);
